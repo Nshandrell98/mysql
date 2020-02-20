@@ -37,4 +37,10 @@ day int,
 year int
  );
 
---  Foreign Key (Customer_SID) REFERENCES CUSTOMER(SID));
+insert into Birthday(person_id, month, day, year) values(
+    1, 'February', 26, 1998
+);
+
+SELECT * from Birthday;
+
+DELETE from info where id = 2;
