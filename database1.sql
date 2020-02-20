@@ -9,7 +9,8 @@ phone VARCHAR(15),
 age int,
 email VARCHAR(50) );
 
-insert into info(fname, lname, phone, age, email) VALUES(
+insert into info(fname, 
+lname, phone, age, email) VALUES(
     'Nekiedra', 'Singleton', '6012872671', 21, 'nekeidrasingleton@gmail.com'
 );
 
@@ -44,3 +45,11 @@ insert into Birthday(person_id, month, day, year) values(
 SELECT * from Birthday;
 
 DELETE from info where id = 2;
+
+insert into Birthday(person_id, month, day, year) values(
+    3, 'September', 20, 1980
+);
+
+UPDATE info Set age=36 Where Id=4;
+
+UPDATE info Set phone='6019999999' Where Id=4;
